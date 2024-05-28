@@ -10,6 +10,6 @@ public class CloudinaryConfig {
 
 	@Bean
 	public Cloudinary cloudinary() {
-		return new Cloudinary("cloudinary://943412152311641:lHskbw-VHRn7QKGKf58y7s32RMY@dboo9wwlk");
+		return new Cloudinary("cloudinary://API environment variablek");
 	}
 }
