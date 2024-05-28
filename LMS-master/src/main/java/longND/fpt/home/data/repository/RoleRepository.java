@@ -16,6 +16,6 @@ public interface RoleRepository extends JpaRepository<Role, Long> {
 
 	boolean existsByName(String name);
 	
-	@Query(value = "SELECT roles.* FROM roles LEFT JOIN user ON roles.role_id = user.role_id WHERE ur.user_id = :userId", nativeQuery = true)
+	@Query(value = "value = "SELECT role.*, user_role.user_id FROM role LEFT JOIN user_role ON role.id = user_role.role_id WHERE user_role.user_id = :userId", nativeQuery = true)
 	Role findRoleByUserId(@Param("userId") Long userId);
 }
